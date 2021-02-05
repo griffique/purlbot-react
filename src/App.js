@@ -1,6 +1,9 @@
+import React, { useState } from "react";
 import "./App.css";
 
 export default function App() {
+  const [submitStatus, setSubmitStatus] = useState(false);
+
   return (
     <div className="container">
       <h1 className="title">
@@ -10,18 +13,13 @@ export default function App() {
       <h2 className="subtitle">
         Generate basic knitting patterns customized to you.
       </h2>
-      <ul id="navigation-menu">
-        <li>
-          <button>How to Use </button>
-        </li>
-        <li>
-          <button>Pattern Generator</button>
-        </li>
-        <li>
-          <button>About PurlBot</button>
-        </li>
-      </ul>
+      <div className="navigation-bar">
+        <button>How to Use </button>
 
+        <button>Pattern Generator</button>
+
+        <button>About PurlBot</button>
+      </div>
       <div id="display-area">
         <div className="card pattern-generator">
           <img
@@ -35,7 +33,7 @@ export default function App() {
               Pattern Generator
             </h5>
 
-            <form id="scarf-form" autocomplete="off">
+            <form id="scarf-form" autoComplete="off">
               <br />
               <h5>Optional: enter your name.</h5>
               <input

@@ -22,7 +22,7 @@ button:hover {
 }
 p,
 ol,
-ul {
+button {
   font-size: 20px;
 }
 note {
@@ -53,7 +53,7 @@ body {
   width: 10%;
   height: 10%;
 }
-#navigation-menu {
+.navigation-bar {
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
@@ -61,14 +61,10 @@ body {
   font-size: 25px;
   margin: 25px 0;
 }
-#navigation-menu li {
-  display: inline;
-  padding: none;
-  margin: 0 50px 0 0;
-  list-style: none;
-  font-size: 24px;
-  font-weight: 600;
+.navigation-bar button {
+  margin: 0px 20px;
 }
+
 #purl-title {
   font-family: "Pacifico";
   color: #3a0ca3;
