@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 
 export default function App() {
-  const [submitStatus, setSubmitStatus] = useState(false);
-
   return (
     <div className="container">
       <h1 className="title">
