@@ -29,14 +29,13 @@ note {
   font-size: 18px;
 }
 
-.page-body {
+body {
   background-image: url("https://drive.google.com/uc?id=1PRR6D6IcdcHhTKgsTlSjgczAPDe3wf2r");
   background-color: #f7f5f2;
   font-family: "Share Tech Mono";
   margin: 0;
   padding: 0;
 }
-
 /*Title and Navigation*/
 .title,
 .subtitle {
