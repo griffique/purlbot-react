@@ -7,7 +7,7 @@ export default function PatternGenerator() {
     setSubmitStatus({ submitted: true });
   }
   if (submitStatus.submitted) {
-    return <h1>Test</h1>;
+    return <h1>Test Mode: Coming Soon!</h1>;
   } else {
     return (
       <div id="display-area">
