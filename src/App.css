@@ -1,0 +1,110 @@
+/*Pagewide Features*/
+
+a:link {
+  color: #7209b7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #f72585;
+}
+
+p,
+ol,
+ul {
+  font-size: 20px;
+}
+note {
+  font-size: 18px;
+}
+.page-body {
+  background-image: url("https://drive.google.com/uc?id=1PRR6D6IcdcHhTKgsTlSjgczAPDe3wf2r");
+  background-color: #f7f5f2;
+  font-family: "Share Tech Mono";
+}
+
+/*Title and Navigation*/
+.title,
+.subtitle {
+  text-align: center;
+}
+.subtitle {
+  color: #3a0ca3;
+  font-weight: 700;
+}
+.title {
+  font-size: 75px;
+  margin: 80px 0 20px;
+}
+#yarn-emoji {
+  width: 10%;
+  height: 10%;
+}
+#navigation-menu {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 25px;
+  margin: 25px 0;
+}
+#navigation-menu li {
+  display: inline;
+  padding: none;
+  margin: 0 50px 0 0;
+  list-style: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+#purl-title {
+  font-family: "Pacifico";
+  color: #3a0ca3;
+}
+#bot-title {
+  font-family: "Share Tech Mono";
+  font-weight: bold;
+  color: #7209b7;
+}
+/*Pattern generator display*/
+
+.pattern-display {
+  background-color: #f7f5f2;
+  padding: 20px;
+  margin: 0 auto;
+}
+#difficulty-ratings {
+  list-style: none;
+
+  font-size: 16px;
+}
+#scarf-title {
+  font-family: "Pacifico";
+  color: #3a0ca3;
+}
+#yarn-calculator {
+  margin: 50px auto;
+  text-align: center;
+}
+
+/*Cards*/
+.card {
+  margin: 0 auto;
+  background-color: #f7f5f2;
+  padding: 0;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 50px;
+  font-size: 20px;
+}
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3a0ca3;
+}
