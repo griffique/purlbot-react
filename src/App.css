@@ -11,11 +11,15 @@ a:visited {
   color: #f72585;
 }
 button {
-  border: none;
-  background: none;
-  color: #f72585;
+  border: 1px solid #7209b7;
+  border-radius: 20px;
+  background: #7209b7;
+  color: #fff;
+  padding: 5px 10px;
 }
-
+button:hover {
+  background: #3a0ca3;
+}
 p,
 ol,
 ul {
@@ -24,13 +28,13 @@ ul {
 note {
   font-size: 18px;
 }
-.card-body {
-  max-width: 900px;
-}
+
 .page-body {
   background-image: url("https://drive.google.com/uc?id=1PRR6D6IcdcHhTKgsTlSjgczAPDe3wf2r");
   background-color: #f7f5f2;
   font-family: "Share Tech Mono";
+  margin: 0;
+  padding: 0;
 }
 
 /*Title and Navigation*/
@@ -82,6 +86,7 @@ note {
   padding: 20px;
   margin: 0 auto;
 }
+
 #difficulty-ratings {
   list-style: none;
 
@@ -101,6 +106,7 @@ note {
   margin: 0 auto;
   background-color: #f7f5f2;
   padding: 0;
+  max-width: 650px;
 }
 
 /*Footer*/
