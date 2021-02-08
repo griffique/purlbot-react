@@ -4,6 +4,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 
 export default function PatternGenerator() {
   const [projectType, setProjectType] = useState();
+  const [dropdownTitle, setDropdownTitle] = useState("Select Your Project");
   const [name, setName] = useState();
   const [gauge, setGauge] = useState();
   const [submitStatus, setSubmitStatus] = useState({ submitted: false });
@@ -13,8 +14,8 @@ export default function PatternGenerator() {
   function handleGauge(event) {
     setGauge(event.target.value);
   }
-  function handleProjectType(event) {
-    setProjectType(event.target.value);
+  function handleProjectType(e) {
+    setProjectType(e);
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -53,14 +54,13 @@ export default function PatternGenerator() {
               <div className="form-group">
                 <DropdownButton
                   id="dropdown-basic-button"
-                  title="Select Your Project"
+                  title={dropdownTitle}
                   variant="success"
+                  onSelect={handleProjectType}
                 >
-                  <Dropdown.Item href="#/action-1">Scarf</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Coming Soon: Hat
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
+                  <Dropdown.Item href="#/scarf">Scarf</Dropdown.Item>
+                  <Dropdown.Item href="#/hat">Coming Soon: Hat</Dropdown.Item>
+                  <Dropdown.Item href="#/mittens">
                     Coming Soon: Mittens
                   </Dropdown.Item>
                 </DropdownButton>
