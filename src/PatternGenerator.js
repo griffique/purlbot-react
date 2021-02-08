@@ -1,10 +1,23 @@
 import React, { useState } from "react";
 
 export default function PatternGenerator() {
+  const [projectType, setProjectType] = useState();
+  const [name, setName] = useState();
+  const [gauge, setGauge] = useState();
   const [submitStatus, setSubmitStatus] = useState({ submitted: false });
+  function handleName(event) {
+    setName(event.target.value);
+  }
+  function handleGauge(event) {
+    setGauge(event.target.value);
+  }
+  function handleProjectType(event) {
+    setProjectType(event.target.value);
+  }
   function handleSubmit(event) {
     event.preventDefault();
     setSubmitStatus({ submitted: true });
+    console.log(projectType);
   }
   if (submitStatus.submitted) {
     return <h1>Test Mode: Coming Soon!</h1>;
@@ -31,11 +44,17 @@ export default function PatternGenerator() {
                 type="text"
                 placeholder="Type your name here..."
                 id="name"
+                onChange={handleName}
               />
               <br />
               <h5>What do you want to knit?</h5>
               <div className="form-group">
-                <select className="form-control" id="project-type">
+                <select
+                  className="form-control"
+                  id="project-type"
+                  placeholder="Choose your project..."
+                  onSelect={handleProjectType}
+                >
                   <option>Scarf</option>
                   <option>Coming Soon: Hat</option>
                   <option>Coming Soon: Mittens</option>
@@ -51,6 +70,7 @@ export default function PatternGenerator() {
                 type="text"
                 placeholder="Type a number here..."
                 id="gauge"
+                onChange={handleGauge}
               />
               <br />
               <input type="Submit" id="submit" onClick={handleSubmit} />
