@@ -54,6 +54,7 @@ export default function PatternGenerator() {
                 <DropdownButton
                   id="dropdown-basic-button"
                   title="Select Your Project"
+                  variant="success"
                 >
                   <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">
