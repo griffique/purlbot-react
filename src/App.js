@@ -1,5 +1,5 @@
 import "./App.css";
-import PatternGenerator from "./PatternGenerator";
+import PatternGeneratorForm from "./PatternGeneratorForm";
 
 export default function App() {
   return (
@@ -18,7 +18,7 @@ export default function App() {
 
         <button>About PurlBot</button>
       </div>
-      <PatternGenerator />
+      <PatternGeneratorForm />
       <footer id="coded-by">
         <a
           href="https://github.com/griffique/griffin-she-codes-plus"
