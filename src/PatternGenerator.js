@@ -56,12 +56,12 @@ export default function PatternGenerator() {
                   title="Select Your Project"
                   variant="success"
                 >
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">Scarf</Dropdown.Item>
                   <Dropdown.Item href="#/action-2">
-                    Another action
+                    Coming Soon: Hat
                   </Dropdown.Item>
                   <Dropdown.Item href="#/action-3">
-                    Something else
+                    Coming Soon: Mittens
                   </Dropdown.Item>
                 </DropdownButton>
               </div>
