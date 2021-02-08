@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/Dropdown";
 
 export default function PatternGenerator() {
   const [projectType, setProjectType] = useState();
@@ -49,16 +51,18 @@ export default function PatternGenerator() {
               <br />
               <h5>What do you want to knit?</h5>
               <div className="form-group">
-                <select
-                  className="form-control"
-                  id="project-type"
-                  placeholder="Choose your project..."
-                  onSelect={handleProjectType}
+                <DropdownButton
+                  id="dropdown-basic-button"
+                  title="Select Your Project"
                 >
-                  <option>Scarf</option>
-                  <option>Coming Soon: Hat</option>
-                  <option>Coming Soon: Mittens</option>
-                </select>
+                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    Another action
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">
+                    Something else
+                  </Dropdown.Item>
+                </DropdownButton>
               </div>
               <br />
               <h5>
