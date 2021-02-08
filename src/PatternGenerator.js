@@ -14,8 +14,8 @@ export default function PatternGenerator() {
   function handleGauge(event) {
     setGauge(event.target.value);
   }
-  function handleProjectType(e) {
-    setProjectType(e);
+  function handleProjectType(event) {
+    setProjectType(event.slice(2));
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -23,7 +23,11 @@ export default function PatternGenerator() {
     console.log(projectType);
   }
   if (submitStatus.submitted) {
-    return <h1>Test Mode: Coming Soon!</h1>;
+    return (
+      <h1>
+        Building a {projectType} for {name} with a gauge of {gauge} st/inch!
+      </h1>
+    );
   } else {
     return (
       <div id="display-area">
@@ -58,9 +62,13 @@ export default function PatternGenerator() {
                   variant="success"
                   onSelect={handleProjectType}
                 >
-                  <Dropdown.Item href="#/scarf">Scarf</Dropdown.Item>
-                  <Dropdown.Item href="#/hat">Coming Soon: Hat</Dropdown.Item>
-                  <Dropdown.Item href="#/mittens">
+                  <Dropdown.Item href="#/scarf" value="Scarf">
+                    Scarf
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/hat" value="Hat">
+                    Coming Soon: Hat
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/mittens" value="Mittens">
                     Coming Soon: Mittens
                   </Dropdown.Item>
                 </DropdownButton>
