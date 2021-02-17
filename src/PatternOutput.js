@@ -19,6 +19,11 @@ export default function PatternOutput(props) {
           </a>
           to measurements listed below.{" "}
         </p>
+        <ul>
+          {" "}
+          <li> Children's scarf measurement = (6" x 48")</li>{" "}
+          <li> Adult scarf measurement = (8" x 60")</li>
+        </ul>
       </div>
     );
   else {
