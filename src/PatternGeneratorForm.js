@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import "./PatternGeneratorForm.css";
+import PatternOutput from "./PatternOutput";
 export default function PatternGenerator() {
   const [projectType, setProjectType] = useState();
   const [dropdownTitle, setDropdownTitle] = useState("Select Your Project");
@@ -23,11 +24,7 @@ export default function PatternGenerator() {
     console.log(projectType);
   }
   if (submitStatus.submitted) {
-    return (
-      <h1>
-        Building a {projectType} for {name} with a gauge of {gauge} st/inch!
-      </h1>
-    );
+    return <PatternOutput project={projectType} name={name} gauge={gauge} />;
   } else {
     return (
       <div id="display-area">

@@ -1,5 +1,6 @@
 import "./App.css";
 import PatternGeneratorForm from "./PatternGeneratorForm";
+import PatternOutput from "./PatternOutput";
 
 export default function App() {
   return (
