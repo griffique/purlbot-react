@@ -1,8 +1,10 @@
 import "./App.css";
 import PatternGeneratorForm from "./PatternGeneratorForm";
-import PatternOutput from "./PatternOutput";
 
 export default function App() {
+  function reloadPage() {
+    return <PatternGeneratorForm />;
+  }
   return (
     <div className="container">
       <h1 className="title">
@@ -17,7 +19,7 @@ export default function App() {
 
         <button>Pattern Generator</button>
 
-        <button>About PurlBot</button>
+        <button onClick={reloadPage}>About PurlBot</button>
       </div>
       <PatternGeneratorForm />
       <footer id="coded-by">

@@ -26,7 +26,7 @@ export default function PatternOutput(props) {
           </ul>
         </div>
         <h3 className="stitch-title">Suggested Stitches</h3>{" "}
-        <ul id="difficulty-ratings">
+        <ul className="difficulty-ratings">
           <li>⭐ Easier </li>
           <li>⭐⭐ Intermediate </li>
           <li>⭐⭐⭐ Advanced</li>
@@ -77,7 +77,7 @@ export default function PatternOutput(props) {
             </div>
           </div>
         </div>
-        <h3>
+        <h3 className="yarn-calculator">
           {" "}
           Not sure if you have enough yarn for your project?{" "}
           <a href="https://www.JimmyBeansWool.com/knittingCalculator">

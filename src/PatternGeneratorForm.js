@@ -6,11 +6,13 @@ import PatternOutput from "./PatternOutput";
 export default function PatternGenerator() {
   const [projectType, setProjectType] = useState();
   const [dropdownTitle, setDropdownTitle] = useState("Select Your Project");
-  const [name, setName] = useState();
+  const [name, setName] = useState("PurlBot");
   const [gauge, setGauge] = useState();
   const [submitStatus, setSubmitStatus] = useState({ submitted: false });
   function handleName(event) {
-    setName(event.target.value);
+    if (event.target.value.length > 0) {
+      setName(event.target.value);
+    }
   }
   function handleGauge(event) {
     setGauge(event.target.value);
