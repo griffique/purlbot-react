@@ -4,27 +4,29 @@ export default function PatternOutput(props) {
   if (props.project === "scarf")
     return (
       <div className="container">
-        <h1>{props.name}'s Scarf Pattern</h1>
-        <h3>Sizes are given as (child, adult). </h3>
-        <p>
-          Cast on ({props.gauge * 6}, {props.gauge * 8}) stitches. Knit in your
-          chosen stitch until you measure (48, 60) inches from cast on, or
-          desired length, and bind off in pattern.{" "}
-          <a
-            href="https://blog.knitpicks.com/tutorial-blocking-knits/"
-            target="_blank"
-          >
-            Block{" "}
-          </a>
-          to measurements listed below.{" "}
-        </p>
-        <ul>
-          {" "}
-          <li> Children's scarf measurement = (6" x 48")</li>{" "}
-          <li> Adult scarf measurement = (8" x 60")</li>
-        </ul>
-        <h4>Suggested Stitches</h4>
-        <div className="row">
+        <div className="card pattern-display">
+          <h1 className="card-title">{props.name}'s Scarf Pattern</h1>
+          <h4>Sizes are given as (child, adult). </h4>
+          <p className="card-body">
+            Cast on ({props.gauge * 6}, {props.gauge * 8}) stitches. Knit in
+            your chosen stitch until you measure (48, 60) inches from cast on,
+            or desired length, and bind off in pattern.{" "}
+            <a
+              href="https://blog.knitpicks.com/tutorial-blocking-knits/"
+              target="_blank"
+            >
+              Block{" "}
+            </a>
+            to measurements listed below.{" "}
+          </p>
+          <ul>
+            {" "}
+            <li> Children's scarf measurement = (6" x 48")</li>{" "}
+            <li> Adult scarf measurement = (8" x 60")</li>
+          </ul>
+        </div>
+        <h3 className="stitch-title">Suggested Stitches</h3>
+        <div className="row stitch-display">
           <div className="card col-3">
             <img
               className="card-img-top"

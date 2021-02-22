@@ -1,7 +1,7 @@
 ul {
   list-style: none;
 }
-.card-title {
+.stitch-display .card-title {
   font-size: 16px;
 }
 .card img {
@@ -11,6 +11,19 @@ ul {
 .card btn {
   display: inline;
   margin: 0 auto;
+}
+.pattern-display {
+  padding: 20px;
+}
+.stitch-title {
+  text-align: center;
+  color: #3a0ca3;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 25px;
+  margin: 25px 0;
 }
 .row {
   margin: 0 auto;
