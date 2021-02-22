@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./PatternOutput.css";
 export default function PatternOutput(props) {
   if (props.project === "scarf")
     return (
@@ -25,7 +25,7 @@ export default function PatternOutput(props) {
         </ul>
         <h4>Suggested Stitches</h4>
         <div className="row">
-          <div className="card col-4">
+          <div className="card col-3">
             <img
               className="card-img-top"
               src="http://freeknitstitches.com/Images/106/106-big.jpg"
@@ -42,7 +42,7 @@ export default function PatternOutput(props) {
               </a>
             </div>
           </div>
-          <div className="card col-4">
+          <div className="card col-3">
             <img
               className="card-img-top"
               src="http://freeknitstitches.com/Images/216/216-big.jpg"
@@ -59,7 +59,7 @@ export default function PatternOutput(props) {
               </a>
             </div>
           </div>
-          <div className="card col-4">
+          <div className="card col-3">
             <img
               className="card-img-top"
               src="http://freeknitstitches.com/Images/290/290-big.jpg"
