@@ -6,7 +6,7 @@ import PatternOutput from "./PatternOutput";
 export default function PatternGenerator() {
   const [projectType, setProjectType] = useState();
   const [dropdownTitle, setDropdownTitle] = useState("Select Your Project");
-  const [name, setName] = useState("PurlBot");
+  const [name, setName] = useState("PurlBot User");
   const [gauge, setGauge] = useState();
   const [submitStatus, setSubmitStatus] = useState({ submitted: false });
   function handleName(event) {
@@ -15,15 +15,19 @@ export default function PatternGenerator() {
     }
   }
   function handleGauge(event) {
-    setGauge(event.target.value);
+    {
+      setGauge(event.target.value);
+    }
   }
   function handleProjectType(event) {
     setProjectType(event.slice(2));
   }
   function handleSubmit(event) {
     event.preventDefault();
-    setSubmitStatus({ submitted: true });
-    console.log(projectType);
+    if (gauge * 0 === 0) setSubmitStatus({ submitted: true });
+    else {
+      alert("Please enter a number for your gauge.");
+    }
   }
   if (submitStatus.submitted) {
     return <PatternOutput project={projectType} name={name} gauge={gauge} />;
