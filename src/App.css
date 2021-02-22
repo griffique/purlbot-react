@@ -1,15 +1,30 @@
 /*Pagewide Features*/
 
-a:link {
+.footer a:link {
   color: #7209b7;
   text-decoration: none;
 }
-a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
-a:visited {
+.footer a:visited {
   color: #f72585;
 }
+.pattern-generator-link {
+  border: 1px solid #7209b7;
+  border-radius: 20px;
+  background: #7209b7;
+  color: #fff;
+  padding: 9px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.pattern-generator-link:hover {
+  background: #3a0ca3;
+  color: #fff;
+}
+
 button {
   border: 1px solid #7209b7;
   border-radius: 20px;
@@ -73,35 +88,6 @@ body {
   font-family: "Share Tech Mono";
   font-weight: bold;
   color: #7209b7;
-}
-/*Pattern generator display*/
-
-.pattern-display {
-  background-color: #f7f5f2;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-#difficulty-ratings {
-  list-style: none;
-
-  font-size: 16px;
-}
-#scarf-title {
-  font-family: "Pacifico";
-  color: #3a0ca3;
-}
-#yarn-calculator {
-  margin: 50px auto;
-  text-align: center;
-}
-
-/*Cards*/
-.card {
-  margin: 0 auto;
-  background-color: #f7f5f2;
-  padding: 0;
-  max-width: 650px;
 }
 
 /*Footer*/

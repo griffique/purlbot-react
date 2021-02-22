@@ -1,10 +1,8 @@
+import React from "react";
 import "./App.css";
 import PatternGeneratorForm from "./PatternGeneratorForm";
 
 export default function App() {
-  function reloadPage() {
-    return <PatternGeneratorForm />;
-  }
   return (
     <div className="container">
       <h1 className="title">
@@ -17,9 +15,11 @@ export default function App() {
       <div className="navigation-bar">
         <button>How to Use </button>
 
-        <button>Pattern Generator</button>
+        <a href="/" className="pattern-generator-link">
+          Pattern Generator
+        </a>
 
-        <button onClick={reloadPage}>About PurlBot</button>
+        <button>About PurlBot</button>
       </div>
       <PatternGeneratorForm />
       <footer id="coded-by">

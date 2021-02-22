@@ -4,8 +4,8 @@ import Dropdown from "react-bootstrap/Dropdown";
 import "./PatternGeneratorForm.css";
 import PatternOutput from "./PatternOutput";
 export default function PatternGenerator() {
-  const [projectType, setProjectType] = useState();
-  const [dropdownTitle, setDropdownTitle] = useState("Select Your Project");
+  const [projectType, setProjectType] = useState("Select Your Project");
+
   const [name, setName] = useState("PurlBot User");
   const [gauge, setGauge] = useState();
   const [submitStatus, setSubmitStatus] = useState({ submitted: false });
@@ -29,9 +29,10 @@ export default function PatternGenerator() {
       alert("Please enter a number for your gauge.");
     }
   }
+
   if (submitStatus.submitted) {
     return <PatternOutput project={projectType} name={name} gauge={gauge} />;
-  } else {
+  } else
     return (
       <div id="display-area">
         <div className="card pattern-generator">
@@ -61,7 +62,7 @@ export default function PatternGenerator() {
               <div className="form-group">
                 <DropdownButton
                   id="dropdown-basic-button"
-                  title={dropdownTitle}
+                  title={projectType}
                   variant="success"
                   onSelect={handleProjectType}
                 >
@@ -95,5 +96,4 @@ export default function PatternGenerator() {
         </div>
       </div>
     );
-  }
 }
