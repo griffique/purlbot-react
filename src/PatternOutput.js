@@ -25,7 +25,12 @@ export default function PatternOutput(props) {
             <li> Adult scarf measurement = (8" x 60")</li>
           </ul>
         </div>
-        <h3 className="stitch-title">Suggested Stitches</h3>
+        <h3 className="stitch-title">Suggested Stitches</h3>{" "}
+        <ul id="difficulty-ratings">
+          <li>⭐ Easier </li>
+          <li>⭐⭐ Intermediate </li>
+          <li>⭐⭐⭐ Advanced</li>
+        </ul>
         <div className="row stitch-display">
           <div className="card col-3">
             <img
@@ -72,11 +77,6 @@ export default function PatternOutput(props) {
             </div>
           </div>
         </div>
-        <ul id="difficulty-ratings">
-          <li>⭐ Easier </li>
-          <li>⭐⭐ Intermediate </li>
-          <li>⭐⭐⭐ Advanced</li>
-        </ul>
         <h3>
           {" "}
           Not sure if you have enough yarn for your project?{" "}
