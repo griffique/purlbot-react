@@ -32,14 +32,11 @@ export default function PatternOutput(props) {
               alt="Image of pattern"
             />
             <div className="card-body">
-              <h5 className="card-title">Forked Lightning ⭐</h5>
-
-              <a
-                href="http://freeknitstitches.com/pattern.php?num=106&menu=2"
-                className="btn btn-primary"
-              >
-                Go to pattern
-              </a>
+              <h5 className="card-title">
+                <a href="http://freeknitstitches.com/pattern.php?num=106&menu=2">
+                  Forked Lightning ⭐
+                </a>
+              </h5>
             </div>
           </div>
           <div className="card col-3">
@@ -49,14 +46,12 @@ export default function PatternOutput(props) {
               alt="Image of pattern"
             />
             <div className="card-body">
-              <h5 className="card-title">Twisted Rib ⭐⭐</h5>
-
-              <a
-                href="http://freeknitstitches.com/pattern.php?num=216&menu=1"
-                className="btn btn-primary"
-              >
-                Go to pattern
-              </a>
+              <h5 className="card-title">
+                {" "}
+                <a href="http://freeknitstitches.com/pattern.php?num=216&menu=1">
+                  Twisted Rib ⭐⭐
+                </a>
+              </h5>
             </div>
           </div>
           <div className="card col-3">
@@ -66,14 +61,12 @@ export default function PatternOutput(props) {
               alt="Image of pattern"
             />
             <div className="card-body">
-              <h5 className="card-title"> Sine Wave ⭐⭐⭐</h5>
-
-              <a
-                href="http://freeknitstitches.com/pattern.php?num=290&menu=4"
-                className="btn btn-primary"
-              >
-                Go to pattern
-              </a>
+              <h5 className="card-title">
+                {" "}
+                <a href="http://freeknitstitches.com/pattern.php?num=290&menu=4">
+                  Sine Wave ⭐⭐⭐
+                </a>
+              </h5>
             </div>
           </div>
         </div>
