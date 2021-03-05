@@ -29,8 +29,11 @@ export default function App() {
         </a>
       </div>
       <PatternGeneratorForm />
+      <br />
       <HowTo />
+      <br />
       <About />
+      <br />
       <Footer />
     </div>
   );
