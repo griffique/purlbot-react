@@ -1,7 +1,7 @@
 import React from "react";
-export default function About() {
+export default function HowTo() {
   return (
-    <div className="card using-purlbot">
+    <div className="card using-purlbot" id="how-to">
       <img
         src="https://drive.google.com/uc?id=1dKworEstqhPX1qisQAAC0Hgy4tehL_UY"
         className="card-img-top"

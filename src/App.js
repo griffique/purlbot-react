@@ -16,7 +16,7 @@ export default function App() {
         Generate basic knitting patterns customized to you.
       </h2>
       <div className="navigation-bar">
-        <a href="/" className="how-to-link">
+        <a href="#how-to" className="how-to-link">
           How To Use
         </a>
 
@@ -24,7 +24,7 @@ export default function App() {
           Pattern Generator
         </a>
 
-        <a href="/" className="about-link">
+        <a href="#about" className="about-link">
           About PurlBot
         </a>
       </div>

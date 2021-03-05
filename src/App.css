@@ -15,6 +15,7 @@
 .navigation-bar a:hover {
   background: #3a0ca3;
   color: #fff;
+  border: 1px solid #3a0ca3;
 }
 
 p,

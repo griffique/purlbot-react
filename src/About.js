@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div class="card about-purlbot">
+    <div class="card about-purlbot" id="about">
       <img
         src="https://drive.google.com/uc?id=1cmQAznp4h9S_K4EnyUjws1Mx2aJkm2Ga"
         class="card-img-top"
