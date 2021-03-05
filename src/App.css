@@ -1,16 +1,6 @@
 /*Pagewide Features*/
 
-.footer a:link {
-  color: #7209b7;
-  text-decoration: none;
-}
-.footer a:hover {
-  text-decoration: underline;
-}
-.footer a:visited {
-  color: #f72585;
-}
-.pattern-generator-link {
+.navigation-bar a {
   border: 1px solid #7209b7;
   border-radius: 20px;
   background: #7209b7;
@@ -18,26 +8,17 @@
   padding: 9px 10px;
   font-size: 20px;
   text-decoration: none;
-  text-align: center;
+  display: inline;
+  margin: 0 25px;
 }
-.pattern-generator-link:hover {
+
+.navigation-bar a:hover {
   background: #3a0ca3;
   color: #fff;
 }
 
-button {
-  border: 1px solid #7209b7;
-  border-radius: 20px;
-  background: #7209b7;
-  color: #fff;
-  padding: 5px 10px;
-}
-button:hover {
-  background: #3a0ca3;
-}
 p,
-ol,
-button {
+ol {
   font-size: 20px;
 }
 note {
@@ -76,9 +57,6 @@ body {
   font-size: 25px;
   margin: 25px 0;
 }
-.navigation-bar button {
-  margin: 0px 20px;
-}
 
 #purl-title {
   font-family: "Pacifico";
@@ -88,18 +66,4 @@ body {
   font-family: "Share Tech Mono";
   font-weight: bold;
   color: #7209b7;
-}
-
-/*Footer*/
-footer {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  margin: 50px;
-  font-size: 20px;
-}
-.card-title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px;
-  color: #3a0ca3;
 }
