@@ -1,0 +1,22 @@
+footer {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 50px;
+  font-size: 20px;
+}
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3a0ca3;
+}
+.footer a:link {
+  color: #7209b7;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer a:visited {
+  color: #f72585;
+}
