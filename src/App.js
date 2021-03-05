@@ -16,13 +16,17 @@ export default function App() {
         Generate basic knitting patterns customized to you.
       </h2>
       <div className="navigation-bar">
-        <button>How to Use </button>
+        <a href="/" className="how-to-link">
+          How To Use
+        </a>
 
         <a href="/" className="pattern-generator-link">
           Pattern Generator
         </a>
 
-        <button>About PurlBot</button>
+        <a href="/" className="about-link">
+          About PurlBot
+        </a>
       </div>
       <PatternGeneratorForm />
       <HowTo />
