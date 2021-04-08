@@ -46,3 +46,10 @@ ul {
   padding: 15px;
   font-size: 25px;
 }
+
+/*CSS media queries*/
+@media only screen and (max-width: 600px) {
+  .difficulty-ratings li {
+    display: block;
+  }
+}

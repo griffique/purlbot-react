@@ -71,3 +71,9 @@ body {
   font-weight: bold;
   color: #7209b7;
 }
+/*CSS media queries*/
+@media only screen and (max-width: 600px) {
+  .navigation-bar a {
+    display: block;
+  }
+}

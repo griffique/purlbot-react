@@ -32,7 +32,7 @@ export default function PatternOutput(props) {
           <li>⭐⭐⭐ Advanced</li>
         </ul>
         <div className="row stitch-display">
-          <div className="card col-3">
+          <div className="card col-sm-3">
             <img
               className="card-img-top"
               src="http://freeknitstitches.com/Images/106/106-big.jpg"
@@ -46,7 +46,7 @@ export default function PatternOutput(props) {
               </h5>
             </div>
           </div>
-          <div className="card col-3">
+          <div className="card col-sm-3">
             <img
               className="card-img-top"
               src="http://freeknitstitches.com/Images/216/216-big.jpg"
@@ -61,7 +61,7 @@ export default function PatternOutput(props) {
               </h5>
             </div>
           </div>
-          <div className="card col-3">
+          <div className="card col-sm-3">
             <img
               className="card-img-top"
               src="http://freeknitstitches.com/Images/290/290-big.jpg"
