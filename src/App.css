@@ -18,6 +18,12 @@ body {
   padding: 0;
   width: 100%;
 }
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3a0ca3;
+}
 .root { width: 100%;}
 /*Title and Navigation*/
 .subtitle {

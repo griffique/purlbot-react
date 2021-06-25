@@ -12,9 +12,6 @@ export default function App() {
     <div className="container">
       <Router>
         <NavBar />
-        <h1 className="subtitle">
-          Generate basic knitting patterns customized to you.
-        </h1>
         <Switch>
           <Route path="/" exact component={PatternGeneratorForm}></Route>
           <Route path="/how-to" exact component={HowTo}></Route>

@@ -19,6 +19,12 @@
   margin: 50px auto;
   text-align: center;
 }
+/*Image*/
+.row img {
+  max-width: 100%;
+  border-radius: 5px;
+
+}
 
 /*Cards*/
 .card {
