@@ -1,0 +1,28 @@
+.navigation-bar {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    font-size: 25px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .title {
+    font-size: 60px;
+    display: inline;
+  }
+  .links {
+      display: inline;
+      margin: 50px;
+}
+  #purl-title {
+    font-family: "Pacifico";
+    color: #3a0ca3;
+  }
+  #bot-title {
+    font-family: "Share Tech Mono";
+    font-weight: bold;
+    color: #7209b7;
+  }

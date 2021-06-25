@@ -1,23 +1,4 @@
 /*Pagewide Features*/
-
-.navigation-bar a {
-  border: 1px solid #7209b7;
-  border-radius: 20px;
-  background: #7209b7;
-  color: #fff;
-  padding: 9px 10px;
-  font-size: 20px;
-  text-decoration: none;
-  display: inline;
-  margin: 0 25px;
-}
-
-.navigation-bar a:hover {
-  background: #3a0ca3;
-  color: #fff;
-  border: 1px solid #3a0ca3;
-}
-
 p,
 ol {
   font-size: 20px;
@@ -35,45 +16,19 @@ body {
   font-family: "Share Tech Mono";
   margin: 0;
   padding: 0;
+  width: 100%;
 }
+.root { width: 100%;}
 /*Title and Navigation*/
-.title,
 .subtitle {
   text-align: center;
-}
-.subtitle {
   color: #3a0ca3;
   font-weight: 700;
-}
-.title {
-  font-size: 75px;
-  margin: 80px 0 20px;
-}
-#yarn-emoji {
-  width: 10%;
-  height: 10%;
-}
-.navigation-bar {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  padding: 15px;
-  font-size: 25px;
-  margin: 25px 0;
-}
-
-#purl-title {
-  font-family: "Pacifico";
-  color: #3a0ca3;
-}
-#bot-title {
-  font-family: "Share Tech Mono";
-  font-weight: bold;
-  color: #7209b7;
+  margin: 150px 0 20px;
 }
 /*CSS media queries*/
 @media only screen and (max-width: 600px) {
-  .navigation-bar a {
+  .navigation-bar button {
     display: block;
   }
 }
