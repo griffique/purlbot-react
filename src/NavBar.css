@@ -1,28 +1,27 @@
-.navigation-bar {
-    text-align: left;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-    font-size: 25px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
-  .title {
-    font-size: 60px;
-    display: inline;
-  }
-  .links {
-      display: inline;
-      margin: 50px;
+.navbar {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
-  #purl-title {
-    font-family: "Pacifico";
-    color: #3a0ca3;
-  }
-  #bot-title {
-    font-family: "Share Tech Mono";
-    font-weight: bold;
-    color: #7209b7;
-  }
+.nav-header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.title {
+  font-size: 48px;
+  display: inline;
+  margin-left: 15px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 15px 0;
+  padding: 0px;
+  text-align: right;
+}

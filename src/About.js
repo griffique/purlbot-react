@@ -10,16 +10,20 @@ export default function About() {
       />
       <div className="card-body">
         <h5 className="card-title" id="about-purlbot-text">
-          About <span id="purl-title">Purl</span>
+          About<span id="purl-title"> Purl</span>
           <span id="bot-title">Bot</span>
         </h5>
         <p className="card-text">
-          Have you ever found a stash of yarn left over from another project and
-          thought, "what can I make with this?" You probably then browse through
-          countless patterns trying to find something that works with your
-          materials and gauge. That's where <span id="purl-title">Purl</span>
-          <span id="bot-title">Bot</span> is different. You tell us a little bit
-          about your project and we'll generate a basic pattern for you.
+          It's fun to go into your stash of leftover yarn and wonder, "what
+          could I make with this?" Less fun is browsing through endless pages of
+          patterns trying to find something that works with your yarn weight,
+          gauge and amount.
+        </p>
+        <p className="card-text">
+          That's where <span id="purl-title-mini">Purl</span>
+          <span id="bot-title-mini">Bot</span> is different. Just tell us a
+          little bit about your project and we'll generate a basic pattern for
+          you.
         </p>
       </div>
     </div>

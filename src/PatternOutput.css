@@ -6,6 +6,7 @@ ul {
 .difficulty-ratings li {
   display: inline;
   margin: 40px;
+  color: #fff;
 }
 .stitch-display .card-title {
   font-size: 16px;
@@ -17,6 +18,7 @@ ul {
 }
 
 .pattern-display {
+  margin-top: 125px;
   padding: 20px;
 }
 .pattern-display h4 {
