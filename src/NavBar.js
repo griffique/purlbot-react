@@ -5,12 +5,12 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
+      <Link to="/" className="navbar-brand">
         <h1 className="title">
           <span id="purl-title">🧶Purl</span>
           <span id="bot-title">Bot</span>
         </h1>
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"

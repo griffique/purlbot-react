@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
-import "./PatternGeneratorForm.css";
 import PatternOutput from "./PatternOutput";
 export default function PatternGenerator() {
   const [projectType, setProjectType] = useState("Select Your Project");
