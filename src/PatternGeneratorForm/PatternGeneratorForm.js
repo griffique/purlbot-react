@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
-import PatternOutput from "./PatternOutput";
+import PatternOutput from "../PatternOutput/PatternOutput";
 export default function PatternGenerator() {
   const [projectType, setProjectType] = useState("Select Your Project");
 
@@ -19,7 +19,7 @@ export default function PatternGenerator() {
     }
   }
   function handleProjectType(event) {
-    setProjectType(event.slice(2));
+    setProjectType(event.slice(2).toUpperCase());
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -59,13 +59,13 @@ export default function PatternGenerator() {
                   onSelect={handleProjectType}
                 >
                   <Dropdown.Item href="#/scarf" value="Scarf">
-                    Scarf
+                    SCARF
                   </Dropdown.Item>
                   <Dropdown.Item href="#/hat" value="Hat">
-                    Coming Soon: Hat
+                    HAT
                   </Dropdown.Item>
                   <Dropdown.Item href="#/mittens" value="Mittens">
-                    Coming Soon: Mittens
+                    COMING SOON: MITTENS
                   </Dropdown.Item>
                 </DropdownButton>
               </div>

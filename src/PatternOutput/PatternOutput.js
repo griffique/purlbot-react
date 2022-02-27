@@ -1,30 +1,16 @@
 import React from "react";
+import Hat from "./Hat";
+import Scarf from "./Scarf";
 import "./PatternOutput.css";
 export default function PatternOutput(props) {
-  if (props.project === "scarf")
+  if (props.project === "SCARF" || props.project === "HAT")
     return (
       <div className="container">
-        <div className="card pattern-display">
-          <h1 className="card-title">{props.name}'s Scarf Pattern</h1>
-          <h4>Sizes are given as (child, adult). </h4>
-          <p className="card-body">
-            Cast on ({props.gauge * 6}, {props.gauge * 8}) stitches. Knit in
-            your chosen stitch until you measure (48, 60) inches from cast on,
-            or desired length, and bind off in pattern.{" "}
-            <a
-              href="https://blog.knitpicks.com/tutorial-blocking-knits/"
-              target="_blank"
-            >
-              Block{" "}
-            </a>
-            to measurements listed below.{" "}
-          </p>
-          <ul>
-            {" "}
-            <li> Children's scarf measurement = (6" x 48")</li>{" "}
-            <li> Adult scarf measurement = (8" x 60")</li>
-          </ul>
-        </div>
+        {props.project === "scarf" ? (
+          <Scarf gauge={props.gauge} name={props.name} />
+        ) : (
+          <Hat gauge={props.gauge} name={props.name} />
+        )}
         <h3 className="stitch-title">Suggested Stitches</h3>{" "}
         <ul className="difficulty-ratings">
           <li>⭐ Easier </li>
@@ -87,6 +73,6 @@ export default function PatternOutput(props) {
       </div>
     );
   else {
-    return <h1>Hat and Mitten Functionality Coming Soon. Check Back Later!</h1>;
+    return <h1>Mitten Functionality Coming Soon. Check Back Later!</h1>;
   }
 }

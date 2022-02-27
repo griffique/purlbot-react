@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import PatternGeneratorForm from "./PatternGeneratorForm";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import NavBar from "./NavBar";
-import Footer from "./Footer.js";
-import HowTo from "./HowTo.js";
-import About from "./About.js";
+import PatternGeneratorForm from "../PatternGeneratorForm/PatternGeneratorForm";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NavBar from "../NavBar/NavBar.js";
+import Footer from "../Footer/Footer.js";
+import HowTo from "../HowTo/HowTo.js";
+import About from "../About/About.js";
 
 export default function App() {
   return (

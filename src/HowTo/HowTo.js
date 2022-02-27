@@ -30,7 +30,7 @@ export default function HowTo() {
             Use PurlBot to see what you can make and generate a custom pattern!
           </li>
         </ol>
-        <p className="note">
+        <p className="note mt-3">
           *This is important because the stitch may change your gauge. A cable
           pattern, for example, will make it tighter, while a lace pattern often
           makes it looser. For more on gauge, see{" "}

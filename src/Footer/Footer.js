@@ -15,9 +15,9 @@ export default function Footer() {
         target="_blank"
       >
         Quinn Griffin
-      </a>
+      </a>{" "}
       🐱‍🚀 <br />
-      <span id="updates"> Last Updated February 7th, 2022 </span>
+      <span id="updates"> Last Updated February 27th, 2022 </span>
       <br />
       Have you made something with PurlBot?
       <a href="mailto:purlbot@protonmail.com"> Contact me </a> with photos of
