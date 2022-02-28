@@ -1,5 +1,8 @@
 #about,
-#how-to,
-#pattern-generator {
+#how-to {
   margin: 0 auto;
+}
+
+#pattern-generator {
+  margin: 150px auto;
 }
