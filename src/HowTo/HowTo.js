@@ -8,7 +8,24 @@ export default function HowTo() {
         alt="yarn stash"
       />
       <div>
-        <ol>
+        <div
+          className="title"
+          style={{
+            margin: "-225px 0 100px",
+            display: "flex",
+            justifyContent: "center",
+            padding: "20px",
+            fontSize: "200px",
+          }}
+        >
+          <span id="bot-title-lg">How to Use </span>
+          <span id="purl-title-lg" style={{ marginLeft: "20px" }}>
+            {" "}
+            Purl
+          </span>
+          <span id="bot-title-lg">Bot</span>
+        </div>
+        <ol className="card-text">
           <li>
             Choose your yarn and determine approximately how many yards you
             have.

@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="card about-purlbot" id="about">
       <img
-        src="https://drive.google.com/uc?id=1cmQAznp4h9S_K4EnyUjws1Mx2aJkm2Ga"
+        src="/images/aboutpurlbotpic.png"
         className="card-img-top"
         alt="knitting supplies"
       />
