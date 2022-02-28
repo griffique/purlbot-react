@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link to="/" className="navbar-brand">
-        <h1 className="title">
+        <h1 className="nav-title">
           <span id="purl-title">🧶Purl</span>
           <span id="bot-title">Bot</span>
         </h1>

@@ -1,18 +1,14 @@
 import React from "react";
 export default function HowTo() {
   return (
-    <div className="card using-purlbot" id="how-to">
+    <div className="using-purlbot" id="how-to">
       <img
-        src="https://drive.google.com/uc?id=1dKworEstqhPX1qisQAAC0Hgy4tehL_UY"
+        src="/images/knitconfetti.png"
         className="card-img-top"
         alt="yarn stash"
       />
-      <div className="card-body">
-        <h5 className="card-title">
-          How to Use <span id="purl-title">Purl</span>
-          <span id="bot-title">Bot</span>
-        </h5>
-        <ol className="card-text">
+      <div>
+        <ol>
           <li>
             Choose your yarn and determine approximately how many yards you
             have.
