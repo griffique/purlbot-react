@@ -35,6 +35,7 @@ export default function About() {
           little bit about your project and we'll generate a basic pattern for
           you.
         </p>
+        <br />
       </div>
     </div>
   );

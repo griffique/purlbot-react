@@ -13,7 +13,7 @@ note {
 }
 
 body {
-  background-image: linear-gradient(to top, #3a0ca3 0%, #9c52cc 100%);
+  background-image: linear-gradient(to top, #fff 0%, #3a0ca3 100%);
   font-family: "Share Tech Mono";
   margin: 0;
   padding: 0;
