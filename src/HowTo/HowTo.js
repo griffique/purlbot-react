@@ -4,7 +4,7 @@ export default function HowTo() {
     <div className="using-purlbot" id="how-to">
       <img
         src="/images/knitconfetti.png"
-        className="card-img-top"
+        className="img-fluid"
         alt="yarn stash"
       />
       <div>

@@ -2,17 +2,27 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="card about-purlbot" id="about">
+    <div className="about-purlbot" id="about">
       <img
         src="/images/aboutpurlbotpic.png"
         className="card-img-top"
         alt="knitting supplies"
       />
-      <div className="card-body">
-        <h5 className="card-title" id="about-purlbot-text">
-          About<span id="purl-title"> Purl</span>
-          <span id="bot-title">Bot</span>
-        </h5>
+      <div>
+        <div
+          id="about-purlbot-text"
+          style={{
+            margin: "-500px 0 350px",
+            display: "flex",
+            justifyContent: "center",
+            padding: "20px",
+            fontSize: "200px",
+          }}
+        >
+          <span id="bot-title-lg">About</span>
+          <span id="purl-title-lg"> Purl</span>
+          <span id="bot-title-lg">Bot</span>
+        </div>
         <p className="card-text">
           It's fun to go into your stash of leftover yarn and wonder, "what
           could I make with this?" Less fun is browsing through endless pages of
