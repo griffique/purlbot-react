@@ -24,10 +24,7 @@ export default function HowTo() {
               Determine the number of stitches you knit in one inch, both
               horizontally and vertically. This is your gauge.
             </li>
-            <li>
-              Use PurlBot to see what you can make and generate a custom
-              pattern!
-            </li>
+            <li>Use PurlBot to generate a custom pattern!</li>
           </ol>
           <p className="note mt-3">
             *This is important because the stitch may change your gauge. A cable
