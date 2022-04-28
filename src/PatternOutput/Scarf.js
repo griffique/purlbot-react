@@ -3,7 +3,15 @@ const Scarf = (props) => {
   return (
     <div className="card pattern-display">
       <h1 className="card-title">{props.name}'s Scarf Pattern</h1>
-      <h4>Sizes are given as (child, adult). </h4>
+      <h4>Sizes are given as (child, adult).</h4>
+      <button
+        onClick={() => {
+          props.setStatus();
+        }}
+        className="reset btn btn-light no-print"
+      >
+        ✖ RESET
+      </button>
       <ol className="card-body">
         <li>
           Cast on ({props.gauge * 6}, {props.gauge * 8}) stitches.{" "}
@@ -21,12 +29,19 @@ const Scarf = (props) => {
           </a>{" "}
           to measurements listed below.
         </li>
+        <ul>
+          <li> Children = (6" x 48")</li>
+          <li> Adult = (8" x 60")</li>
+        </ul>
       </ol>
-      <ul>
-        {" "}
-        <li> Children's scarf measurement = (6" x 48")</li>{" "}
-        <li> Adult scarf measurement = (8" x 60")</li>
-      </ul>
+      <button
+        className="print btn btn-light no-print"
+        onClick={() => {
+          window.print();
+        }}
+      >
+        📄 PRINT
+      </button>
     </div>
   );
 };

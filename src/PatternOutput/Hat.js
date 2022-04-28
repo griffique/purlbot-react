@@ -3,7 +3,15 @@ const Hat = (props) => {
   return (
     <div className="card pattern-display">
       <h1 className="card-title">{props.name}'s Hat Pattern</h1>
-      <h4>Sizes are given as (children, women, men). </h4>
+      <h4>Sizes are given as (children, women, men).</h4>
+      <button
+        onClick={() => {
+          props.setStatus();
+        }}
+        className="reset btn btn-light no-print"
+      >
+        ✖ RESET
+      </button>
       <ol className="card-body">
         <li>
           Cast on ({props.gauge * 20}, {props.gauge * 23}, {props.gauge * 24})
@@ -47,13 +55,20 @@ const Hat = (props) => {
           </a>{" "}
           to measurements below.
         </li>
+        <ul>
+          <li> Children = (20" x 8.5")</li>
+          <li> Women = (23" x 11")</li>
+          <li> Men = (24" x 11.5")</li>
+        </ul>
       </ol>
-      <ul>
-        {" "}
-        <li> Children's Hat Measurement = (20" x 8.5")</li>
-        <li> Women's Hat Measurement = (23" x 11")</li>
-        <li> Men's Hat Measurement = (24" x 11.5")</li>
-      </ul>
+      <button
+        className="print btn btn-light no-print"
+        onClick={() => {
+          window.print();
+        }}
+      >
+        📄 PRINT
+      </button>
     </div>
   );
 };

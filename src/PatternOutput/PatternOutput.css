@@ -1,3 +1,7 @@
+ol {
+  margin: 0 25px;
+}
+
 .difficulty-ratings {
   list-style: none;
   text-align: center;
@@ -9,8 +13,14 @@
   color: #fff;
 }
 
-ol {
-  margin: 0 25px;
+.reset {
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.print {
+  margin: 25px 0 0;
+  max-width: 100px;
 }
 
 .stitch-display .card-title {
@@ -19,11 +29,11 @@ ol {
 
 .stitch-display img {
   border-radius: 5px;
-  height: 250px;
+  max-height: 250px;
 }
 
 .pattern-display {
-  margin-top: 125px;
+  margin-top: 150px;
   padding: 20px;
 }
 .pattern-display h4 {
@@ -40,7 +50,8 @@ ol {
   border-radius: 25px;
   padding: 15px;
   font-size: 25px;
-  margin: 25px 0;
+  margin: 25px auto;
+  max-width: 80%;
 }
 .row {
   margin: 0 auto;
@@ -52,6 +63,7 @@ ol {
   border-radius: 25px;
   padding: 15px;
   font-size: 25px;
+  max-width: 80%;
 }
 
 /*CSS media queries*/

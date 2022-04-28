@@ -14,8 +14,8 @@ footer a:link {
 }
 footer a:hover {
   text-decoration: underline;
-  color: #3a0ca3;
+  color: #f72585;
 }
 footer a:visited {
-  color: #f72585;
+  color: #3a0ca3;
 }

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import PatternOutput from "../PatternOutput/PatternOutput";
+
 export default function PatternGenerator() {
   const [projectType, setProjectType] = useState("Select Your Project");
-
   const [name, setName] = useState("PurlBot User");
   const [gauge, setGauge] = useState();
-  const [submitStatus, setSubmitStatus] = useState({ submitted: false });
+  const [submitStatus, setSubmitStatus] = useState(false);
   function handleName(event) {
     if (event.target.value.length > 0) {
       setName(event.target.value);
@@ -23,17 +23,26 @@ export default function PatternGenerator() {
   }
   function handleSubmit(event) {
     event.preventDefault();
-    if (gauge * 0 === 0) setSubmitStatus({ submitted: true });
+    if (gauge * 0 === 0) setSubmitStatus(true);
     else {
       alert("Please enter a number for your gauge.");
     }
   }
 
-  if (submitStatus.submitted) {
-    return <PatternOutput project={projectType} name={name} gauge={gauge} />;
+  if (submitStatus) {
+    return (
+      <>
+        <PatternOutput
+          setStatus={setSubmitStatus}
+          project={projectType}
+          name={name}
+          gauge={gauge}
+        />
+      </>
+    );
   } else
     return (
-      <div id="pattern-generator" className="row">
+      <div id={submitStatus ? null : "pattern-generator"}>
         <div className="card">
           <div className="card-body">
             <br />
@@ -65,7 +74,7 @@ export default function PatternGenerator() {
                     HAT
                   </Dropdown.Item>
                   <Dropdown.Item href="#/mittens" value="Mittens">
-                    COMING SOON: MITTENS
+                    MITTENS
                   </Dropdown.Item>
                 </DropdownButton>
               </div>

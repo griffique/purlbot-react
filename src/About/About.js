@@ -11,16 +11,15 @@ export default function About() {
       <div>
         <div className="text-area">
           <p>
-            It's fun to go into your stash of leftover yarn and wonder, "what
-            could I make with this?" Less fun is browsing through endless pages
-            of patterns trying to find something that works with your yarn
-            weight, gauge and amount.
+            What if a knitting pattern could be customized to your gauge?
+            Imagine, no more creating and measuring multiple swatches, switching
+            out needles until you find a match.
           </p>
           <p>
-            That's where <span id="purl-title-mini">Purl</span>
-            <span id="bot-title-mini">Bot</span> is different. Just tell us a
-            little bit about your project and we'll generate a basic pattern for
-            you.
+            <span id="purl-title-mini">Purl</span>
+            <span id="bot-title-mini">Bot</span> makes that vision a reality.
+            Just tell us your gauge and we'll generate a basic scarf, hat or
+            mitten pattern for you.
           </p>
         </div>
       </div>

@@ -26,11 +26,11 @@ export default function HowTo() {
             </li>
             <li>Use PurlBot to generate a custom pattern!</li>
           </ol>
-          <p className="note mt-3">
+          <h6 className="note mt-3">
             *This is important because the stitch may change your gauge. A cable
             pattern, for example, will make it tighter, while a lace pattern
             often makes it looser.
-          </p>
+          </h6>
         </div>
       </div>
     </div>

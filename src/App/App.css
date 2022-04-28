@@ -1,5 +1,4 @@
 /*Pagewide Features*/
-p,
 ol {
   font-size: 20px;
 }
@@ -15,22 +14,22 @@ note {
 body {
   background-color: #3a0ca3;
   font-family: "Share Tech Mono";
-  margin-top: 75px;
+  margin-top: 68px;
   padding: 0;
   width: 100%;
 }
 
 .card {
-  margin: 0 auto;
+  margin: 100px auto;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 0;
-  max-width: 650px;
+  padding: 50px;
+  max-width: 90%;
 }
 
 .card-title {
   text-align: center;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 36px;
   color: #3a0ca3;
 }
 .container {
@@ -52,7 +51,16 @@ body {
 
 .text-area {
   color: #fff;
+  font-size: 32px;
   margin: 50px;
+}
+
+.text-area ol {
+  font-size: 24px;
+}
+
+.text-area p {
+  margin-bottom: 50px;
 }
 
 #purl-title {
@@ -72,7 +80,7 @@ body {
 
 #purl-title-mini {
   font-family: "Pacifico";
-  font-size: 20px;
+  font-size: 32px;
   text-shadow: 2px 2px #7209b7;
   vertical-align: middle;
   padding: 0px;
@@ -80,7 +88,7 @@ body {
 #bot-title-mini {
   padding: 0px;
   font-family: "Share Tech Mono";
-  font-size: 20px;
+  font-size: 32px;
   text-shadow: 2px 2px #7209b7;
   font-weight: bold;
 }
@@ -89,5 +97,18 @@ body {
 @media only screen and (max-width: 600px) {
   .navigation-bar button {
     display: block;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    overflow: visible;
+  }
+
+  .card {
+    display: inline;
   }
 }
