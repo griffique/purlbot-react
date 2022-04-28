@@ -17,12 +17,13 @@ const Hat = (props) => {
           Cast on ({props.gauge * 20}, {props.gauge * 23}, {props.gauge * 24})
           stitches.
         </li>
-        <li>Knit for (7, 7.5, 8) inches.</li>
+        <li>Knit in k1, p2 rib for 2.5 inches.</li>
+        <li>Knit in your chosen body stitch for (4.5, 5, 6.5) inches.</li>
         <li>
           Complete decrease set-up round:
           <ul>
             <li>
-              Knit ((
+              Knit in chosen stitch ((
               {props.gauge * 20 - 2}, {props.gauge * 23 - 2},{" "}
               {props.gauge * 24 - 2}
               ), k2tog, place marker.
@@ -32,8 +33,10 @@ const Hat = (props) => {
         <li>
           Then continue decrease pattern:
           <ul>
-            <li>Even rounds: knit.</li>
-            <li>Odd rounds: knit to 2 before marker, k2tog.</li>
+            <li>Even rounds: knit in chosen stitch.</li>
+            <li>
+              Odd rounds: knit in chosen stitch to 2 before marker, k2tog.
+            </li>
           </ul>
         </li>
         <li>

@@ -51,15 +51,21 @@ const Mittens = (props) => {
           Switch to the <strong>larger needles</strong> (the ones you used to
           check your gauge.
         </li>
-        <li>Knit for (.5, .75, .75, .75) inches.</li>
+        <li>Knit in your chosen stitch for (.5, .75, .75, .75) inches.</li>
       </ol>
       <h3 className="mt-4">
         <strong>Work thumb gusset:</strong>
       </h3>
       <ol>
-        <li>Set up round: m1, k1, m1, place marker. Knit to end of round.</li>
-        <li>Rounds 1 and 2: knit.</li>
-        <li>Round 3: m1, knit to marker, m1, slip marker, knit to end.</li>
+        <li>
+          Set up round: m1, k1, m1, place marker. Knit in chosen stitch to end
+          of round.
+        </li>
+        <li>Rounds 1 and 2: knit in chosen stitch.</li>
+        <li>
+          Round 3: m1, knit in chosen stitch to marker, m1, slip marker, knit in
+          chosen stitch to end.
+        </li>
         <li>
           Work rounds 1-3 for approximately (1.5, 2, 2, 2,25) inches, ending
           with round 3.
@@ -74,14 +80,21 @@ const Mittens = (props) => {
         <strong>Work and shape body:</strong>
       </h3>
       <ol>
-        <li>Knit until body measures (3, 3.75, 4, 4.5) inches from gusset.</li>
         <li>
-          Decrease setup round: knit ({Math.round((props.gauge * 5.5) / 2)},{" "}
+          Knit in chosen stitch until body measures (3, 3.75, 4, 4.5) inches
+          from gusset.
+        </li>
+        <li>
+          Decrease setup round: knit in chosen stitch (
+          {Math.round((props.gauge * 5.5) / 2)},{" "}
           {Math.round((props.gauge * 6.5) / 2)},{" "}
           {Math.round(props.gauge * 7) / 2}, {Math.round((props.gauge * 8) / 2)}
           ), place marker, knit until end of round.
         </li>
-        <li>Decrease round: *k1, ssk, k to 3 sts before marker, k2tog, k1*</li>
+        <li>
+          Decrease round: *k1, ssk, knit in chosen stitch to 3 sts before
+          marker, k2tog, k1*
+        </li>
         <li>Work decrease round until 8 stitches remain.</li>
         <li>
           Break yarn and thread tail through remaining stitches; pull tight to
@@ -93,11 +106,14 @@ const Mittens = (props) => {
       </h3>
       <ol>
         <li>
-          Put held stitches on larger needles and knit across, picking up 1
-          stitch from body of mitten.
+          Put held stitches on larger needles and knit in chosen stitch across,
+          picking up 1 stitch from body of mitten.
         </li>
         <li>Place marker and join in the round.</li>
-        <li>Knit for (1.25, 1.75, 2, 2.25) inches from picked up stitch.</li>
+        <li>
+          Knit in chosen stitch for (1.25, 1.75, 2, 2.25) inches from picked up
+          stitch.
+        </li>
         <li>*k2tog*</li>
         <li>
           Break yarn, threading through remaining stitches and pull tight to
