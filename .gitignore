@@ -24,3 +24,12 @@ yarn-error.log*
 *.ini
 *.ini
 public/desktop.ini
+desktop.ini
+public/desktop.ini
+public/images/desktop.ini
+src/App/desktop.ini
+src/desktop.ini
+src/Footer/desktop.ini
+src/NavBar/desktop.ini
+src/PatternGeneratorForm/desktop.ini
+src/PatternOutput/desktop.ini
