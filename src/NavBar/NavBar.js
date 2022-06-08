@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
@@ -36,21 +36,21 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/account" className="nav-link">
+            <a href="http://127.0.0.1:5000/account" className="nav-link">
               My Account
-            </Link>
+            </a>
           </li>
         </ul>
         <ul className="navbar-nav mr-auto">
           <li className="nav-item register">
-              <Link to="/register" className="nav-link">
+              <a href="http://127.0.0.1:5000/register" className="nav-link">
                 <button className="btn btn-outline-success">Register</button>
-              </Link>
+              </a>
             </li>
             <li className="nav-item login">
-              <Link to="/login" className="nav-link">
+              <a href="http://127.0.0.1:5000/login" className="nav-link">
               <button className="btn btn-outline-primary">Log In</button>
-              </Link>
+              </a>
             </li>
         </ul>
       </div>
