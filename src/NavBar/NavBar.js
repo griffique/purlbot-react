@@ -7,7 +7,7 @@ const NavBar = () => {
     <nav className="no-print navbar navbar-expand-lg navbar-light bg-light">
       <Link to="/" className="navbar-brand">
         <h1 className="nav-title">
-          <span id="purl-title">🧶Purl</span>
+          <span id="purl-title">Purl</span>
           <span id="bot-title">Bot</span>
         </h1>
       </Link>
@@ -31,15 +31,27 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
-              Pattern Generator
+            <Link to="/about" className="nav-link">
+              About
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link">
-              About PurlBot
+            <Link to="/account" className="nav-link">
+              My Account
             </Link>
           </li>
+        </ul>
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item register">
+              <Link to="/register" className="nav-link">
+                <button className="btn btn-outline-success">Register</button>
+              </Link>
+            </li>
+            <li className="nav-item login">
+              <Link to="/login" className="nav-link">
+              <button className="btn btn-outline-primary">Log In</button>
+              </Link>
+            </li>
         </ul>
       </div>
     </nav>
