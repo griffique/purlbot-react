@@ -16,8 +16,8 @@ export default function About() {
             out needles until you find a match.
           </p>
           <p>
-            <span id="purl-title-mini">Purl</span>
-            <span id="bot-title-mini">Bot</span> makes that vision a reality.
+            <span id="purl-title-body">Purl</span>
+            <span id="bot-title-body">Bot</span> makes that vision a reality.
             Just tell us your gauge and we'll generate a basic scarf, hat or
             mitten pattern for you.
           </p>

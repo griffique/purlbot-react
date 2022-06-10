@@ -3,15 +3,33 @@
   justify-content: space-between;
 }
 
-.navbar {
-  text-align: left;
-  background: rgba(255, 255, 255, 0.9);
-  width: 100%;
+.nav-container {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  width: 100%;
+}
+
+.nav-container li {
+  margin-top: 0px !important;
+}
+
+.navbar {
+  align-items: center;
   display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 12px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand:hover {
+  text-decoration: none !important;
 }
 
 .nav-title {
@@ -21,10 +39,8 @@
 }
 
 .nav-link {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0px 15px 5px;
-  padding: 0px;
+  font-size: 20px;
+  margin: 0 24px;
 }
 
 @media only screen and (max-width: 991px) {

@@ -1,4 +1,18 @@
 /*Pagewide Features*/
+
+a:link {
+  color: #7209b7 !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #f72585 !important;
+  text-decoration: underline !important;
+}
+a:visited {
+  color: #3a0ca3 !important;
+}
+
+
 ol {
   font-size: 20px;
 }
@@ -12,7 +26,8 @@ note {
 }
 
 body {
-  background-color: #3a0ca3;
+  background: linear-gradient(135deg,rgba(114,9,183,1) 0%, rgba(58,12,163,1) 120%);
+  background-attachment: fixed; 
   font-family: "Share Tech Mono";
   margin-top: 68px;
   padding: 0;
@@ -65,7 +80,7 @@ body {
 
 #purl-title {
   font-family: "Pacifico";
-  font-size: 28px;
+  font-size: 24px;
   color: #3a0ca3;
   vertical-align: middle;
   padding: 0px;
@@ -73,19 +88,19 @@ body {
 #bot-title {
   padding: 0px;
   font-family: "Share Tech Mono";
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   color: #7209b7;
 }
 
-#purl-title-mini {
+#purl-title-body {
   font-family: "Pacifico";
   font-size: 32px;
   text-shadow: 2px 2px #7209b7;
   vertical-align: middle;
   padding: 0px;
 }
-#bot-title-mini {
+#bot-title-body {
   padding: 0px;
   font-family: "Share Tech Mono";
   font-size: 32px;
