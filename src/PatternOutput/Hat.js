@@ -1,17 +1,36 @@
 import React from "react";
+import axios from "axios";
+
 const Hat = (props) => {
+  const handlePatternSave = () => {
+    axios.post('/patterns', {
+      gauge: props.gauge,
+      type: 'hat',
+      nickname: props.name
+    })
+    .then(function (response) {
+      console.log(response);
+      alert(`Pattern Saved! Type: Hat, Gauge: ${props.gauge} `)
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
   return (
     <div className="card pattern-display">
-      <h1 className="card-title">{props.name}'s Hat Pattern</h1>
+      <h1 className="card-title">Your Hat Pattern</h1>
       <h4>Sizes are given as (children, women, men).</h4>
-      <button
-        onClick={() => {
-          props.setStatus();
-        }}
-        className="reset btn btn-light no-print"
-      >
-        ✖ RESET
-      </button>
+      <div className="pattern-button-area m-auto">
+        <button className="btn m-4 btn-info save-pattern" type="button" onClick={() => { handlePatternSave()} }>Save Pattern</button>
+        <button
+          onClick={() => {
+            props.setStatus();
+          }}
+          className="reset btn m-4 btn-light no-print"
+        >
+          ✖ RESET
+        </button>
+      </div>
       <ol className="card-body">
         <li>
           Cast on ({props.gauge * 20}, {props.gauge * 23}, {props.gauge * 24})
@@ -52,7 +71,7 @@ const Hat = (props) => {
           Weave in starting end and{" "}
           <a
             href="https://blog.knitpicks.com/tutorial-blocking-knits/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             block hat
           </a>{" "}

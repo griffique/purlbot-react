@@ -1,5 +1,23 @@
 import React, { useState } from "react";
+import axios from "axios";
+
 const Mittens = (props) => {
+
+  const handlePatternSave = () => {
+    axios.post('/patterns', {
+      gauge: props.gauge,
+      type: 'mittens',
+      nickname: props.name
+    })
+    .then(function (response) {
+      console.log(response);
+      alert(`Pattern Saved! Type: Mittens, Gauge: ${props.gauge} `)
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  }
+
   const castVals = [
     Math.round(props.gauge * 5.5),
     Math.round(props.gauge * 6.5),
@@ -21,19 +39,22 @@ const Mittens = (props) => {
 
   return (
     <div className="card pattern-display">
-      <h1 className="card-title">{props.name}'s Mitten Pattern</h1>
+      <h1 className="card-title">Your Mitten Pattern</h1>
       <h4>Sizes are given as (children, adult S, M, L).</h4>
       <h4>
         See <a href="#measurements">measurements</a> below.
       </h4>
-      <button
-        onClick={() => {
-          props.setStatus();
-        }}
-        className="reset btn btn-light no-print"
-      >
-        ✖ RESET
-      </button>
+      <div className="pattern-button-area m-auto">
+        <button className="btn m-4 btn-info save-pattern" type="button" onClick={() => { handlePatternSave()} }>Save Pattern</button>
+        <button
+          onClick={() => {
+            props.setStatus();
+          }}
+          className="reset btn m-4 btn-light no-print"
+        >
+          ✖ RESET
+        </button>
+      </div>
       <h3 className="mt-4">
         <strong>Work cuff:</strong>
       </h3>
@@ -128,7 +149,7 @@ const Mittens = (props) => {
           Weave in ends and{" "}
           <a
             href="https://blog.knitpicks.com/tutorial-blocking-knits/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             block mittens
           </a>{" "}

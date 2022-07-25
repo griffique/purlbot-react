@@ -50,11 +50,11 @@ export default function PatternGenerator() {
 
             <form id="scarf-form" autoComplete="off">
               <br />
-              <h5>Optional: enter your name.</h5>
+              <h5>Optional: enter a nickname for the pattern.</h5>
               <input
                 className="form-control"
                 type="text"
-                placeholder="Type your name here..."
+                placeholder="Type your pattern's nickname here..."
                 id="name"
                 onChange={handleName}
               />
