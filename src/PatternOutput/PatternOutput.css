@@ -13,16 +13,6 @@ ol {
   color: #fff;
 }
 
-.reset {
-  margin: 0 auto;
-  max-width: 100px;
-}
-
-.print {
-  margin: 25px 0 0;
-  max-width: 100px;
-}
-
 .stitch-display .card-title {
   font-size: 16px;
 }

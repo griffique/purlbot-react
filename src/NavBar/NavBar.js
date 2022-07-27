@@ -50,9 +50,15 @@ const NavBar = () => {
               </li>
               <li className="nav-item login">
                 <a href="http://127.0.0.1:5000/login" className="nav-link">
-                <button className="btn btn-primary">Log In</button>
+                  <button className="btn btn-primary">Log In</button>
                 </a>
               </li>
+              <li>
+                <a href="http://127.0.0.1:5000/logout" className="nav-link">
+                  <button className="btn btn-danger">Log Out</button>
+                </a>
+              </li>
+
           </ul>
         </div>
       </nav>

@@ -11,10 +11,11 @@ const Mittens = (props) => {
     })
     .then(function (response) {
       console.log(response);
-      alert(`Pattern Saved! Type: Mittens, Gauge: ${props.gauge} `)
+      alert(`Pattern Saved! Type: Mittens, Gauge: ${props.gauge}. View your patterns under 'My Account.'`)
     })
     .catch(function (error) {
       console.log(error);
+      alert('Please log in to save your pattern.');
     });
   }
 
@@ -44,13 +45,13 @@ const Mittens = (props) => {
       <h4>
         See <a href="#measurements">measurements</a> below.
       </h4>
-      <div className="pattern-button-area m-auto">
+      <div className="pattern-button-area m-auto no-print">
         <button className="btn m-4 btn-info save-pattern" type="button" onClick={() => { handlePatternSave()} }>Save Pattern</button>
         <button
           onClick={() => {
             props.setStatus();
           }}
-          className="reset btn m-4 btn-light no-print"
+          className="reset btn m-4 btn-light"
         >
           ✖ RESET
         </button>

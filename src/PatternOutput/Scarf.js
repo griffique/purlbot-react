@@ -11,10 +11,11 @@ const Scarf = (props) => {
     })
     .then(function (response) {
       console.log(response);
-      alert(`Pattern Saved! Type: Scarf, Gauge: ${props.gauge} `)
+      alert(`Pattern Saved! Type: Scarf, Gauge: ${props.gauge}. View your patterns under 'My Account.'`)
     })
     .catch(function (error) {
       console.log(error);
+      alert('Please log in to save your pattern.');
     });
   }
 
@@ -22,13 +23,13 @@ const Scarf = (props) => {
     <div className="card pattern-display">
       <h1 className="card-title">Your Scarf Pattern</h1>
       <h4>Sizes are given as (child, adult).</h4>
-      <div className="pattern-button-area m-auto">
+      <div className="pattern-button-area m-auto no-print">
         <button className="btn m-4 btn-info save-pattern" type="button" onClick={() => { handlePatternSave()} }>Save Pattern</button>
         <button
           onClick={() => {
             props.setStatus();
           }}
-          className="reset btn m-4 btn-light no-print"
+          className="reset btn m-4 btn-light"
         >
           ✖ RESET
         </button>
