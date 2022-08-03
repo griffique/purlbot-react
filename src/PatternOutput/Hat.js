@@ -43,7 +43,7 @@ const Hat = (props) => {
           Complete decrease set-up round:
           <ul>
             <li>
-              Knit in chosen stitch ((
+              Knit in chosen stitch (
               {props.gauge * 20 - 2}, {props.gauge * 23 - 2},{" "}
               {props.gauge * 24 - 2}
               ), k2tog, place marker.
