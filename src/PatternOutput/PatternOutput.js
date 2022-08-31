@@ -49,7 +49,7 @@ export default function PatternOutput(props) {
           <img
             className="card-img-top"
             src="http://freeknitstitches.com/Images/106/106-big.jpg"
-            alt="Image of pattern"
+            alt="pattern"
           />
           <div className="card-body">
             <h5 className="card-title">
@@ -64,7 +64,7 @@ export default function PatternOutput(props) {
           <img
             className="card-img-top"
             src="http://freeknitstitches.com/Images/216/216-big.jpg"
-            alt="Image of pattern"
+            alt="pattern"
           />
           <div className="card-body">
             <h5 className="card-title">
@@ -80,7 +80,7 @@ export default function PatternOutput(props) {
           <img
             className="card-img-top"
             src="http://freeknitstitches.com/Images/290/290-big.jpg"
-            alt="Image of pattern"
+            alt="pattern"
           />
           <div className="card-body">
             <h5 className="card-title">

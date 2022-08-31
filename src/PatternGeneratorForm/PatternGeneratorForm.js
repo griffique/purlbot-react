@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {useLocation} from "react-router-dom";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import PatternOutput from "../PatternOutput/PatternOutput";
@@ -8,15 +9,31 @@ export default function PatternGenerator() {
   const [name, setName] = useState("PurlBot User");
   const [gauge, setGauge] = useState();
   const [submitStatus, setSubmitStatus] = useState(false);
+
+
+// Handle query params from backend saved patterns list
+
+const search = useLocation().search;
+const savedType = new URLSearchParams(search).get('type');
+const savedGauge = new URLSearchParams(search).get('gauge');
+
+if (savedType && savedGauge) {
+  return (
+    <PatternOutput
+      setStatus={setSubmitStatus}
+      project={savedType.toUpperCase()}
+      gauge={savedGauge}
+    />
+  )
+}
+
   function handleName(event) {
     if (event.target.value.length > 0) {
       setName(event.target.value);
     }
   }
   function handleGauge(event) {
-    {
       setGauge(event.target.value);
-    }
   }
   function handleProjectType(event) {
     setProjectType(event.slice(2).toUpperCase());
