@@ -37,24 +37,24 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a href="http://127.0.0.1:5000/account" className="nav-link">
+              <a href="https://purlbot-app.herokuapp.com/account" className="nav-link">
                 My Account
               </a>
             </li>
           </ul>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item register">
-                <a href="http://127.0.0.1:5000/register" className="nav-link">
+                <a href="https://purlbot-app.herokuapp.com/register" className="nav-link">
                   <button className="btn btn-success">Register</button>
                 </a>
               </li>
               <li className="nav-item login">
-                <a href="http://127.0.0.1:5000/login" className="nav-link">
+                <a href="https://purlbot-app.herokuapp.com/login" className="nav-link">
                   <button className="btn btn-primary">Log In</button>
                 </a>
               </li>
               <li>
-                <a href="http://127.0.0.1:5000/logout" className="nav-link">
+                <a href="https://purlbot-app.herokuapp.com/logout" className="nav-link">
                   <button className="btn btn-danger">Log Out</button>
                 </a>
               </li>
