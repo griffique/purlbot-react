@@ -29,7 +29,7 @@ const Hat = (props) => {
           }}
           className="reset btn m-4 btn-light"
         >
-          ✖ RESET
+          <a href="/">✖ RESET</a>
         </button>
       </div>
       <ol className="card-body">

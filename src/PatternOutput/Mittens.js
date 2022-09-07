@@ -53,7 +53,7 @@ const Mittens = (props) => {
           }}
           className="reset btn m-4 btn-light"
         >
-          ✖ RESET
+          <a href="/">✖ RESET</a>
         </button>
       </div>
       <h3 className="mt-4">
