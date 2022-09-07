@@ -6,12 +6,13 @@ a:link {
 }
 a:hover {
   color: #f72585 !important;
-  text-decoration: underline !important;
 }
 a:visited {
   color: #3a0ca3 !important;
 }
-
+a:visited:hover {
+  color: #f72585 !important;
+}
 
 ol {
   font-size: 20px;
