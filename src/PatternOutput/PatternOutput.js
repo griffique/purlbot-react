@@ -2,6 +2,10 @@ import React from "react";
 import Hat from "./Hat";
 import Scarf from "./Scarf";
 import Mittens from "./Mittens";
+import zigzag from "./zigzag.jpg";
+import star from "./star.jpg";
+import moss from "./double-moss.jpg";
+
 import "./PatternOutput.css";
 
 export default function PatternOutput(props) {
@@ -48,13 +52,13 @@ export default function PatternOutput(props) {
         <div className="card col-sm-3 no-print">
           <img
             className="card-img-top"
-            src="http://freeknitstitches.com/Images/106/106-big.jpg"
+            src={moss}
             alt="pattern"
           />
           <div className="card-body">
             <h5 className="card-title">
-              <a href="http://freeknitstitches.com/pattern.php?num=106&amp;menu=2">
-                Forked Lightning
+              <a target="_blank" rel="noreferrer" href="https://nimble-needles.com/stitches/the-double-moss-stitch-knitting-pattern/">
+                Double Moss Stitch
               </a>{" "}
               ⭐
             </h5>
@@ -63,14 +67,14 @@ export default function PatternOutput(props) {
         <div className="card col-sm-3 no-print">
           <img
             className="card-img-top"
-            src="http://freeknitstitches.com/Images/216/216-big.jpg"
+            src={zigzag}
             alt="pattern"
           />
           <div className="card-body">
             <h5 className="card-title">
               {" "}
-              <a href="http://freeknitstitches.com/pattern.php?num=216&amp;menu=1">
-                Twisted Rib
+              <a target="_blank" rel="noreferrer" href="https://nimble-needles.com/stitches/how-to-knit-the-zig-zag-stitch/">
+                ZigZag Rib Stitch
               </a>{" "}
               ⭐⭐
             </h5>
@@ -79,14 +83,14 @@ export default function PatternOutput(props) {
         <div className="card col-sm-3 no-print">
           <img
             className="card-img-top"
-            src="http://freeknitstitches.com/Images/290/290-big.jpg"
+            src={star}
             alt="pattern"
           />
           <div className="card-body">
             <h5 className="card-title">
               {" "}
-              <a href="http://freeknitstitches.com/pattern.php?num=290&amp;menu=4">
-                Sine Wave
+              <a target="_blank" rel="noreferrer" href="https://nimble-needles.com/stitches/how-to-knit-the-star-stitch/">
+                Star Stitch
               </a>{" "}
               ⭐⭐⭐
             </h5>
