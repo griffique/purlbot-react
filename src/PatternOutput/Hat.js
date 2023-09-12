@@ -55,7 +55,7 @@ const Hat = (props) => {
           <ul>
             <li>Even rounds: knit in chosen stitch.</li>
             <li>
-              Odd rounds: knit in chosen stitch to 2 before marker, k2tog.
+              Odd rounds: *knit in chosen stitch to 2 before marker, k2tog.*
             </li>
           </ul>
         </li>

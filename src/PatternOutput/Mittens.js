@@ -71,7 +71,7 @@ const Mittens = (props) => {
         <li>Work k1, p1 rib for (2.5, 3, 4, 4) inches.</li>
         <li>
           Switch to the <strong>larger needles</strong> (the ones you used to
-          check your gauge.
+          check your gauge).
         </li>
         <li>Knit in your chosen stitch for (.5, .75, .75, .75) inches.</li>
       </ol>
