@@ -44,9 +44,9 @@ const Hat = (props) => {
           <ul>
             <li>
               Knit in chosen stitch (
-              {props.gauge * 20 - 2}, {props.gauge * 23 - 2},{" "}
-              {props.gauge * 24 - 2}
-              ), k2tog, place marker.
+              {20}, {23},{" "}
+              {24}
+              ), place marker.
             </li>
           </ul>
         </li>
@@ -60,7 +60,7 @@ const Hat = (props) => {
           </ul>
         </li>
         <li>
-          Repeat these two rounds until you have (10, 11, 12) stitches left,
+          Repeat these two rounds until you have ({props.gauge}, {props.gauge}, {props.gauge}) stitches left,
           ending on an odd round.{" "}
         </li>
         <li>
