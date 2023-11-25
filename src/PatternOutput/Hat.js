@@ -20,7 +20,7 @@ const Hat = (props) => {
   return (
     <div className="card pattern-display">
       <h1 className="card-title">Your Hat Pattern</h1>
-      <h4>Sizes are given as (children, women, men).</h4>
+      <h4>Sizes are given as (women, men), and include two inches of negative ease.</h4>
       <div className="pattern-button-area m-auto no-print">
         <button className="btn m-4 btn-info save-pattern" type="button" onClick={() => { handlePatternSave()} }>Save Pattern</button>
         <button
@@ -34,7 +34,7 @@ const Hat = (props) => {
       </div>
       <ol className="card-body">
         <li>
-          Cast on ({props.gauge * 20}, {props.gauge * 23}, {props.gauge * 24})
+          Cast on ({props.gauge * 20}, {props.gauge * 22})
           stitches.
         </li>
         <li>Knit in k1, p2 rib for 2.5 inches.</li>
@@ -43,24 +43,23 @@ const Hat = (props) => {
           Complete decrease set-up round:
           <ul>
             <li>
-              Knit in chosen stitch (
-              {20}, {23},{" "}
-              {24}
-              ), place marker.
+              *Knit in chosen stitch (
+              {10}, {11}
+              ), place marker.*
             </li>
           </ul>
         </li>
         <li>
-          Then continue decrease pattern:
+          Then continue decrease pattern.
           <ul>
-            <li>Even rounds: knit in chosen stitch.</li>
+            <li>Even rounds: knit in chosen stitch (or switch to stockinette if you desire).</li>
             <li>
               Odd rounds: *knit in chosen stitch to 2 before marker, k2tog.*
             </li>
           </ul>
         </li>
         <li>
-          Repeat these two rounds until you have ({props.gauge}, {props.gauge}, {props.gauge}) stitches left,
+          Repeat these two rounds until you have ({10}, {11}) stitches left,
           ending on an odd round.{" "}
         </li>
         <li>
@@ -75,14 +74,10 @@ const Hat = (props) => {
             target="_blank" rel="noreferrer"
           >
             block hat
-          </a>{" "}
-          to measurements below.
+          </a>
+          , folding the ribbed cuff in half.
         </li>
-        <ul>
-          <li> Children = (20" x 8.5")</li>
-          <li> Women = (23" x 11")</li>
-          <li> Men = (24" x 11.5")</li>
-        </ul>
+
       </ol>
       <button
         className="print btn btn-light no-print"

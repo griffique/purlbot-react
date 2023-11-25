@@ -62,34 +62,32 @@ const Mittens = (props) => {
       <ol className="card-body">
         <li>
           Cast on ({castOn[0]}, {castOn[1]}, {castOn[2]}, {castOn[3]}) stitches
-          with double pointed needles <strong>one size smaller</strong> than the
-          needles you used to check your gauge.
+          with double pointed needles <strong>two sizes smaller</strong> than the
+          needles you used to check your gauge. <em>If you need to adjust the number of stitches for your particular stitch, you can do so here.</em>
         </li>
         <li>
           <strong>Place marker</strong> and join in the round.
         </li>
-        <li>Work k1, p1 rib for (2.5, 3, 4, 4) inches.</li>
+        <li>Work k1, p1 rib for (2.5, 3, 3, 3) inches.</li>
+        <li> Set up round: m1, place marker. Knit in chosen stitch to end
+          of round.</li>
         <li>
           Switch to the <strong>larger needles</strong> (the ones you used to
           check your gauge).
         </li>
-        <li>Knit in your chosen stitch for (.5, .75, .75, .75) inches.</li>
+        <li>*k1, slip marker, and knit in your chosen stitch* for (.5, .75, .75, .75) inches.</li>
       </ol>
       <h3 className="mt-4">
         <strong>Work thumb gusset:</strong>
       </h3>
       <ol>
+        <li>Rounds 1 and 2: knit to marker, slip marker, knit in chosen stitch to end.</li>
         <li>
-          Set up round: m1, k1, m1, place marker. Knit in chosen stitch to end
-          of round.
-        </li>
-        <li>Rounds 1 and 2: knit in chosen stitch.</li>
-        <li>
-          Round 3: m1, knit in chosen stitch to marker, m1, slip marker, knit in
+          Round 3: m1, knit to marker, m1, slip marker, knit in
           chosen stitch to end.
         </li>
         <li>
-          Work rounds 1-3 for approximately (1.5, 2, 2, 2,25) inches, ending
+          Work rounds 1-3 for approximately (1.5, 2, 2, 2.25) inches, ending
           with round 3.
         </li>
         <li>
@@ -111,16 +109,18 @@ const Mittens = (props) => {
           {Math.round((props.gauge * 5.5) / 2)},{" "}
           {Math.round((props.gauge * 6.5) / 2)},{" "}
           {Math.round(props.gauge * 7) / 2}, {Math.round((props.gauge * 8) / 2)}
-          ), place marker, knit until end of round.
+          ), place marker, knit in chosen stitch until end of round.
         </li>
         <li>
-          Decrease round: *k1, ssk, knit in chosen stitch to 3 sts before
-          marker, k2tog, k1*
+          Decrease round: *K2tog, knit to 2 sts before
+          marker, ssk, slip marker, k2tog, knit to two sts before end marker, ssk.* <br></br><sub>Note: You may continue in your chosen stitch if desired, but I recommend Stockinette for the top of the mitten.
+          </sub></li>
+          <li>
+          Normal round: Knit. 
         </li>
-        <li>Work decrease round until 8 stitches remain.</li>
+        <li>Work these two rounds until ({castOn[0]-16}, {castOn[1]-16}, {castOn[2]-16}, {castOn[3]-16}) stitches remain.</li>
         <li>
-          Break yarn and thread tail through remaining stitches; pull tight to
-          secure.
+          Split the sts across two needles and join by grafting (seamless) or using a three-needle bindoff (this method leaves a visible seam).
         </li>
       </ol>
       <h3 className="mt-4">
@@ -129,7 +129,7 @@ const Mittens = (props) => {
       <ol>
         <li>
           Put held stitches on larger needles and knit in chosen stitch across,
-          picking up 1 stitch from body of mitten.
+          picking up 3 sts from body of mitten.
         </li>
         <li>Place marker and join in the round.</li>
         <li>
